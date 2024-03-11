@@ -14,5 +14,6 @@ html, body {
 }
 
 section {
+    text-align: center;
     background-color: var(--dark-grayish-blue);
 }

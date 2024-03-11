@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Advice generator app</title>
+  <script src="script.js" defer></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,10 +17,16 @@
 </head>
 <body>
   <section>
-    Advice #<!-- Advice ID goes here -->
-
-    "<!-- Advice text goes here -->"
+    <p>
+      Advice #<span id="adviceID"></span><!-- Advice ID goes here -->
+    </p>
+    <p>
+      "<span id="results"></span><!-- Advice text goes here -->"
+    </p>
     <img src="images/pattern-divider-desktop.svg">
+    <button id="getData">
+      <img src="images/icon-dice.svg" alt="re-roll advice">
+    </button>
   </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
