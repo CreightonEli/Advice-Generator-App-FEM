@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Advice generator app</title>
   <script src="script.js" defer></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; color: var(--light-cyan); }
+    .attribution a { color: var(--neon-green); }
   </style>
 </head>
 <body>
   <section>
-    <p>
-      Advice #<span id="adviceID"></span><!-- Advice ID goes here -->
+    <p id="adviceNum">
+      ADVICE #<span id="adviceID"></span><!-- Advice ID goes here -->
     </p>
-    <p>
-      "<span id="results"></span><!-- Advice text goes here -->"
+    <p id="adviceText">
+      <!-- Delete when done: -->
+      <!--It is easy to sit up and take notice, what's difficult is getting up and taking action.-->
+      “<span id="results"></span><!-- Advice text goes here -->”
     </p>
-    <img src="images/pattern-divider-desktop.svg">
+    <img id="dividerDesktop" src="images/pattern-divider-desktop.svg">
+    <img id="dividerMobile" src="images/pattern-divider-mobile.svg">
     <button id="getData">
       <img src="images/icon-dice.svg" alt="re-roll advice">
     </button>

@@ -1,7 +1,7 @@
 :root {
     /* Primary Colors */
     --light-cyan: hsl(193, 38%, 86%);
-    --Neon-green: hsl(150, 100%, 66%);
+    --neon-green: hsl(150, 100%, 66%);
 
     /* Neutral Colors */
     --grayish-blue: hsl(217, 19%, 38%);
@@ -11,9 +11,88 @@
 
 html, body {
     background-color: var(--darkblue);
+    font-family: "Manrope", sans-serif;
 }
 
 section {
+    margin: 223px auto 100px;
+    padding: 37px 47px 0;
+    max-width: 446px;
+    border-radius: 15px;
     text-align: center;
     background-color: var(--dark-grayish-blue);
+    box-shadow: 15px 40px 80px 50px hsla(220, 14%, 4%, 0.082);
+}
+
+#adviceNum {
+    color: var(--neon-green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 4.6px;
+}
+
+#adviceText {
+    margin: 24px 0 39px;
+    color: var(--light-cyan);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -.3px;
+}
+
+img {
+    width: 100%;
+}
+
+#dividerMobile {
+    display: none;
+}
+
+button {
+    margin: 3px 0 0;
+    border: none;
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    background-color: var(--neon-green);
+    transform: translate(0, 32px);
+}
+button:hover {
+    cursor: pointer;
+}
+button img {
+    width: 24px;
+    vertical-align: middle;
+}
+button:active img {
+    animation: spin 200ms linear;
+}
+
+@media (max-width: 520px) {
+    section {
+        margin: 121px 8px 100px;
+        padding: 31px 21px 0;
+        border-radius: 9px;
+    }
+    #adviceNum {
+        font-size: 10px;
+        letter-spacing: 4.3px;
+    }
+    #adviceText {
+        margin: 24px 0 24px;
+        font-size: 24px;
+    }
+    #dividerDesktop {
+        display: none;
+    }
+    #dividerMobile {
+        display: block;
+    }
+    button {
+        margin: 0 0 0;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
