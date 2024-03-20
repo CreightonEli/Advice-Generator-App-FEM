@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- [Solution URL](https://www.frontendmentor.io/solutions/advice-generator-app-20dKbHBRSb)
+- [Live Site URL](https://creightoneli.github.io/Advice-Generator-App-FEM/)
 
 ## My process
 
