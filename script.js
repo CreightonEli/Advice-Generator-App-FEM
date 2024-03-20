@@ -1,4 +1,3 @@
-// https://www.youtube.com/watch?v=2AfzKmgqWUE
 const resID = document.querySelector('#adviceID')
 const resAdv = document.querySelector('#results')
 const resBtn = document.querySelector('#getData')

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="A small web app that utilizes the Slip Advice API to serve users random advice.">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,10 +12,10 @@
   <title>Frontend Mentor | Advice generator app</title>
   <script src="script.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; color: var(--light-cyan); }
-    .attribution a { color: var(--neon-green); }
+    .attribution a { color: var(--neon-green); text-decoration: none; }
+    .attribution a:hover, a:focus { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -23,12 +24,10 @@
       ADVICE #<span id="adviceID"></span><!-- Advice ID goes here -->
     </p>
     <p id="adviceText">
-      <!-- Delete when done: -->
-      <!--It is easy to sit up and take notice, what's difficult is getting up and taking action.-->
       “<span id="results"></span><!-- Advice text goes here -->”
     </p>
-    <img id="dividerDesktop" src="images/pattern-divider-desktop.svg">
-    <img id="dividerMobile" src="images/pattern-divider-mobile.svg">
+    <img id="dividerDesktop" src="images/pattern-divider-desktop.svg" alt="the divider for desktop">
+    <img id="dividerMobile" src="images/pattern-divider-mobile.svg" alt="the divider for mobile">
     <button id="getData">
       <img src="images/icon-dice.svg" alt="re-roll advice">
     </button>

@@ -9,9 +9,18 @@
     --darkblue: hsl(218, 23%, 16%);
 }
 
+*::selection {
+    background-color: var(--neon-green);
+    color: var(--darkblue);
+}
+
 html, body {
     background-color: var(--darkblue);
     font-family: "Manrope", sans-serif;
+}
+
+body {
+    padding: 0 8px;
 }
 
 section {
@@ -55,9 +64,11 @@ button {
     height: 64px;
     background-color: var(--neon-green);
     transform: translate(0, 32px);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-button:hover {
+button:hover, button:focus {
     cursor: pointer;
+    box-shadow: 0 0 30px var(--neon-green);
 }
 button img {
     width: 24px;
@@ -67,9 +78,9 @@ button:active img {
     animation: spin 200ms linear;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 844px) {
     section {
-        margin: 121px 8px 100px;
+        margin: 120px auto 100px;
         padding: 31px 21px 0;
         border-radius: 9px;
     }
