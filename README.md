@@ -77,7 +77,7 @@ function getAdvice(){
 
 ### Continued development
 
-I might incorporate Sass later to better organize and minify my CSS files. I also may change other style aspects of the app just to customize it a bit.
+Since the initial deployment of the project I have decided to incorporate Sass to help improve performance. Now it runs so much smoother thanks to the minified css that I got a perfect lighthouse score. In the future I may change other style aspects of the app, just to customize it a bit, but for now I'm very pleased with it.
 
 ### Useful resources
 

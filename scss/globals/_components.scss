@@ -1,22 +1,5 @@
-:root {
-    /* Primary Colors */
-    --light-cyan: hsl(193, 38%, 86%);
-    --neon-green: hsl(150, 100%, 66%);
-
-    /* Neutral Colors */
-    --grayish-blue: hsl(217, 19%, 38%);
-    --dark-grayish-blue: hsl(217, 19%, 24%);
-    --darkblue: hsl(218, 23%, 16%);
-}
-
-*::selection {
-    background-color: var(--neon-green);
-    color: var(--darkblue);
-}
-
 html, body {
     background-color: var(--darkblue);
-    font-family: "Manrope", sans-serif;
 }
 
 body {
@@ -76,34 +59,4 @@ button img {
 }
 button:active img {
     animation: spin 200ms linear;
-}
-
-@media (max-width: 844px) {
-    section {
-        margin: 120px auto 100px;
-        padding: 31px 21px 0;
-        border-radius: 9px;
-    }
-    #adviceNum {
-        font-size: 10px;
-        letter-spacing: 4.3px;
-    }
-    #adviceText {
-        margin: 24px 0 24px;
-        font-size: 24px;
-    }
-    #dividerDesktop {
-        display: none;
-    }
-    #dividerMobile {
-        display: block;
-    }
-    button {
-        margin: 0 0 0;
-    }
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }

@@ -1,0 +1,7 @@
+* {
+    font-family: "Manrope", sans-serif;
+}
+*::selection {
+    background-color: var(--neon-green);
+    color: var(--darkblue);
+}
